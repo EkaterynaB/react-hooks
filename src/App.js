@@ -6,8 +6,8 @@ import ContextApi from './components/ContextApi';
 function App() {
   return (
     <>
-      {/*<TodoApp />*/}
-      <ContextApi />
+      <TodoApp />
+      {/*<ContextApi />*/}
     </>
   );
 }
