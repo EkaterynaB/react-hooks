@@ -1,5 +1,5 @@
-import React, { createContext } from 'react';
-import useTodoState from '../hooks/useTodoState';
+import React, { createContext, useReducer } from 'react';
+import todoReducer from '../reducers/todo.reducer';
 
 const defaultTodo = [
   { id: 1, task: "Walk the Goldfish", completed: true },
@@ -9,9 +9,9 @@ const defaultTodo = [
 export const TodoContext = createContext();
 
 export function TodoProvider({children}) {
-  const todosStuff = useTodoState(defaultTodo);
+  const [todos, dispatch] = useReducer(todoReducer, defaultTodo);
   
-  return <TodoContext.Provider value={todosStuff}>
+  return <TodoContext.Provider value={{ todos, dispatch }}>
     {children}
   </TodoContext.Provider>
 }
