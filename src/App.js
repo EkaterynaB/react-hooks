@@ -7,7 +7,10 @@ function App() {
   return (
     <>
       <TodoApp />
-      {/*<ContextApi />*/}
+    <div style={{ display: 'none'}}>
+      <ContextApi />
+    </div>
+
     </>
   );
 }

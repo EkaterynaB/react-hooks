@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
 
 class PageContent extends Component {
@@ -18,7 +18,5 @@ class PageContent extends Component {
     );
   };
 }
-
-PageContent.propTypes = {};
 
 export default PageContent;

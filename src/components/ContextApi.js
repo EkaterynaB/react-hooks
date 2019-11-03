@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import Navbar from './Navbar';
 import Form from './Form';
 import PageContent from './PageContent';
@@ -15,7 +15,5 @@ const ContextApi = () => (
     </LanguageProvider>
   </ThemeProvider>
 );
-
-ContextApi.propTypes = {};
 
 export default ContextApi;
